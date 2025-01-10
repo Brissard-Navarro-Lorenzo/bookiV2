@@ -35,31 +35,35 @@
                 <form>
                     <label for="recherche_lieu"></label>
                     <!-- on aurait pu mettre un type="search" -->
-                    <input type="text" id="recherche_lieu" placeholder="Chercher un lieu">
+                    <input type="text" id="recherche_lieu" placeholder="Chercher un lieu" required>
                     <button class="loupe"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <div class="bouton-recherche">
+                        <button class="Rechercher">Rechercher</button>   
+                    </div>
                 </form>
-                <div class="bouton-recherche">
-                    <button class="Rechercher">Rechercher</button>   
-                </div>
             </div>
             <div class="filtres">
                     <h2>Filtres</h2>
                     <div class="icones">
-                        <div class="barre-filtres">
-                            <i class="fa-solid fa-money-bill-wave"></i>
-                            <h2>Economique</h2>
+                        <div class="groupe-filtres">
+                            <div class="barre-filtres">
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                                <h2>Economique</h2>
+                            </div>
+                            <div class="barre-filtres">
+                                <i class="fa-solid fa-person"></i>
+                                <h2>Familial</h2>
+                            </div>
                         </div>
-                        <div class="barre-filtres">
-                            <i class="fa-solid fa-person"></i>
-                            <h2>Familial</h2>
-                        </div>
-                        <div class="barre-filtres">
-                            <i class="fa-solid fa-heart"></i>
-                            <h2>Romantique</h2>
-                        </div>
-                        <div class="barre-filtres">
-                            <i class="fa-solid fa-fire"></i>
-                            <h2>Nos pépites</h2>
+                        <div class="groupe-filtres">
+                            <div class="barre-filtres">
+                                <i class="fa-solid fa-heart"></i>
+                                <h2>Romantique</h2>
+                            </div>
+                            <div class="barre-filtres">
+                                <i class="fa-solid fa-fire"></i>
+                                <h2>Nos pépites</h2>
+                            </div>
                         </div>
                     </div>
             </div>
@@ -304,7 +308,7 @@
                     <a href="#">
                         <article class="card-activite">
                             <div class="image-activites">
-                                <img src="./images/activites/florian-wehde.jpg" alt="Image de Notre-Dame-de-la-Garde">
+                                <img src="./images/activites/florian-wehde.jpg" alt="Image de Notre-Dame-de-la-Garde" id="notreDame">
                             </div>
                             <div class="card-content">
                                 <h3>Notre-Dame-de-la-Garde</h3>
